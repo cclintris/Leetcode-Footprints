@@ -72,6 +72,7 @@ int **threeSum(int *nums, int numsSize, int *returnSize, int **returnColumnSizes
     *returnSize = ret_sz;
     return ret;
 }
+
 void print3SumArrUnit(int *arr) {
     printf("[%d, %d, %d]", arr[0], arr[1], arr[2]);
 }
