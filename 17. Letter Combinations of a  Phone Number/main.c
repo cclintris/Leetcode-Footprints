@@ -20,7 +20,7 @@
 
 char** letterCombinations(char* digits, int* returnSize) {
     int len = strlen(digits);
-    if (digits == 0) {
+    if (len == 0) {
         *returnSize = 0;
         return NULL;
     }
