@@ -7,3 +7,4 @@
 |     0023     | <font color="FFB800">medium</font>  | linkedlist            |
 |     0024     | <font color="FFB800">medium</font>  | linkedlist            |
 |     0025     |  <font color="FF2D55">hard</font>   | linkedlist            |
+|     0029     | <font color="FFB800">medium</font>  | integer control       |
