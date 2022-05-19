@@ -64,6 +64,8 @@ int* findSubstring(char* s, char** words, int wordsSize, int* returnSize) {
         }
     }
 
+    free(count);
+    free(tmp);
     *returnSize = ret_Sz;
     return ret;
 }
@@ -84,19 +86,20 @@ void printIntList(int* arr, int size) {
 }
 
 int main(int argc, char const* argv[]) {
-    char* s = "wordgoodgoodgoodbestword";
-    int wordsSize = 4;
+    char* s = "barfoofoobarthefoobarman";
+    int wordsSize = 3;
     int* returnSize = (int*)malloc(sizeof(int));
     char** words = (char**)malloc(sizeof(char*) * wordsSize);
     words[0] = (char*)malloc(sizeof(char) * 4);
     words[1] = (char*)malloc(sizeof(char) * 4);
     words[2] = (char*)malloc(sizeof(char) * 4);
-    words[3] = (char*)malloc(sizeof(char) * 4);
-    words[0] = "word";
-    words[1] = "good";
-    words[2] = "best";
-    words[3] = "word";
+    words[0] = "bar";
+    words[1] = "foo";
+    words[2] = "the";
     int* ret = findSubstring(s, words, wordsSize, returnSize);
     printIntList(ret, *returnSize);
+    free(ret);
+    free(returnSize);
+    free(words);
     return 0;
 }
