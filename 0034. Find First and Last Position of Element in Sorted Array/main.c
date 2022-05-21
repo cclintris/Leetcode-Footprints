@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include "../utils/output/print.h"
+
 /**
  * I: nums = [5,7,7,8,8,10], target = 8
  * O: [3,4]
@@ -17,12 +19,10 @@
  */
 int* searchRange(int* nums, int numsSize, int target, int* returnSize);
 
-void printIntList(int* arr, int size);
-
 int main(int argc, char const* argv[]) {
     int numsSize = 3;
     int nums[3] = {2, 2, 3};
-    int target = 3;
+    int target = 2;
     int* returnSize = (int*)malloc(sizeof(int));
     int* ret = searchRange(nums, numsSize, target, returnSize);
     printIntList(ret, *returnSize);
@@ -60,19 +60,4 @@ int* searchRange(int* nums, int numsSize, int target, int* returnSize) {
     }
 
     return ret;
-}
-
-void printIntList(int* arr, int size) {
-    printf("[");
-    int index = 0;
-    while (size > 0) {
-        if (size == 1) {
-            printf("%d", arr[index]);
-        } else {
-            printf("%d,", arr[index]);
-        }
-        index++;
-        size--;
-    }
-    printf("]\n");
 }
