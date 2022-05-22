@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include "../STL/list/singlelinkedlist.h"
+
 /*
  * Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
  * Output: [8,9,9,9,0,0,0,1]
@@ -9,25 +11,8 @@
  * 8 9 9 9 0 0 0 1
  */
 
-struct Listnode {
-    int val;
-    struct Listnode *next;
-};
-
-typedef struct Listnode ListNode;
-
-void printListNode(ListNode *root) {
-    while (root != NULL) {
-        if (root->next == NULL) {
-            printf("%d", root->val);
-        } else {
-            printf("%d -> ", root->val);
-        }
-        root = root->next;
-    }
-}
-
 ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
+    int flag = 1;
     if (!l1)
         return l2;
     if (!l2)
@@ -50,6 +35,10 @@ ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
         stub = (ListNode *)malloc(sizeof(ListNode));
         stub->val = temp;
         cur->next = stub;
+        if (flag == 1) {
+            root = cur;
+            flag = 0;
+        }
         cur = cur->next;
         if (l1)
             l1 = l1->next;
@@ -64,12 +53,10 @@ ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
         cur->next = stub;
     }
     stub->next = NULL;
-    cur = root->next;
-    free(root);
+    root = root->next;
 
-    return cur;
+    return root;
 }
-
 int main(int argc, char const *argv[]) {
     ListNode *l1 = (ListNode *)malloc(sizeof(ListNode));
     ListNode *n11 = (ListNode *)malloc(sizeof(ListNode));
@@ -94,6 +81,6 @@ int main(int argc, char const *argv[]) {
     n23->val = 4;
     n23->next = NULL;
     ListNode *root = addTwoNumbers(l1, l2);
-    printListNode(root);
+    printList(root);
     return 0;
 }

@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include "../STL/list/singlelinkedlist.h"
+
 /**
  *
  * I: head = [1,2,3,4]
@@ -13,17 +15,12 @@
  * O: [1]
  */
 
-struct ListNode {
-    int val;
-    struct ListNode* next;
-};
-
-struct ListNode* swapPairs(struct ListNode* head) {
-    struct ListNode* current;
-    struct ListNode* previous;
-    struct ListNode* save;
-    struct ListNode* pom;
-    struct ListNode* link;
+ListNode* swapPairs(ListNode* head) {
+    ListNode* current;
+    ListNode* previous;
+    ListNode* save;
+    ListNode* pom;
+    ListNode* link;
 
     int flag;
 
@@ -51,25 +48,11 @@ struct ListNode* swapPairs(struct ListNode* head) {
     return head;
 }
 
-void printList(struct ListNode* list) {
-    printf("[");
-    struct ListNode* p = list;
-    while (p != NULL) {
-        if (p->next != NULL) {
-            printf("%d,", p->val);
-        } else {
-            printf("%d", p->val);
-        }
-        p = p->next;
-    }
-    printf("]\n");
-}
-
 int main(int argc, char const* argv[]) {
-    struct ListNode* l1n1 = (struct ListNode*)malloc(sizeof(struct ListNode*));
-    struct ListNode* l1n2 = (struct ListNode*)malloc(sizeof(struct ListNode*));
-    struct ListNode* l1n3 = (struct ListNode*)malloc(sizeof(struct ListNode*));
-    struct ListNode* l1n4 = (struct ListNode*)malloc(sizeof(struct ListNode*));
+    ListNode* l1n1 = (ListNode*)malloc(sizeof(ListNode*));
+    ListNode* l1n2 = (ListNode*)malloc(sizeof(ListNode*));
+    ListNode* l1n3 = (ListNode*)malloc(sizeof(ListNode*));
+    ListNode* l1n4 = (ListNode*)malloc(sizeof(ListNode*));
     l1n1->val = 1;
     l1n1->next = l1n2;
     l1n2->val = 2;
@@ -78,7 +61,7 @@ int main(int argc, char const* argv[]) {
     l1n3->next = l1n4;
     l1n4->val = 4;
     l1n4->next = NULL;
-    struct ListNode* ret = swapPairs(l1n1);
+    ListNode* ret = swapPairs(l1n1);
     printList(ret);
     free(l1n1);
     free(l1n2);

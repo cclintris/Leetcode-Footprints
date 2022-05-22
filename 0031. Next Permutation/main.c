@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include "../utils/output/print.h"
+
 /**
  * I: nums = [1,2,3]
  * O: [1,3,2]
@@ -18,8 +20,6 @@ int cmp(const void* a, const void* b);
 void swap(int* num1, int* num2);
 
 void nextPermutation(int* nums, int numsSize);
-
-void printIntList(int* arr, int size);
 
 int main(int argc, char const* argv[]) {
     int numsSize = 6;
@@ -62,19 +62,4 @@ void nextPermutation(int* nums, int numsSize) {
         }
     }
     qsort(nums, numsSize, sizeof(int), cmp);
-}
-
-void printIntList(int* arr, int size) {
-    printf("[");
-    int index = 0;
-    while (size > 0) {
-        if (size == 1) {
-            printf("%d", arr[index]);
-        } else {
-            printf("%d,", arr[index]);
-        }
-        index++;
-        size--;
-    }
-    printf("]\n");
 }

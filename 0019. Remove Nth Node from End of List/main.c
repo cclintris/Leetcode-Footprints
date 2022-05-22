@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include "../STL/list/singlelinkedlist.h"
+
 /**
  *
  * I: head = [1,2,3,4,5], n = 2
@@ -15,19 +17,14 @@
 
 /**
  * Definition for singly-linked list.
- * struct ListNode {
+ *  ListNode {
  *     int val;
- *     struct ListNode *next;
+ *      ListNode *next;
  * };
  */
 
-struct ListNode {
-    int val;
-    struct ListNode* next;
-};
-
-struct ListNode* removeNthFromEnd(struct ListNode* head, int n) {
-    struct ListNode* ptr = head;
+ListNode* removeNthFromEnd(ListNode* head, int n) {
+    ListNode* ptr = head;
     int len = 0;
     while (ptr->next != NULL) {
         len++;
@@ -45,7 +42,7 @@ struct ListNode* removeNthFromEnd(struct ListNode* head, int n) {
         ptr = ptr->next;
     }
     // printf("prev %d\n", ptr->val);
-    struct ListNode* after = ptr->next->next;
+    ListNode* after = ptr->next->next;
     if (after == NULL) {
         ptr->next = NULL;
     } else {
@@ -55,26 +52,12 @@ struct ListNode* removeNthFromEnd(struct ListNode* head, int n) {
     return head;
 }
 
-void printList(struct ListNode* head) {
-    printf("[");
-    struct ListNode* ptr = head;
-    while (ptr != NULL) {
-        if (ptr->next == NULL) {
-            printf("%d", ptr->val);
-        } else {
-            printf("%d,", ptr->val);
-        }
-        ptr = ptr->next;
-    }
-    printf("]");
-}
-
 int main(int argc, char const* argv[]) {
-    struct ListNode* l1 = (struct ListNode*)malloc(sizeof(struct ListNode*));
-    struct ListNode* l2 = (struct ListNode*)malloc(sizeof(struct ListNode*));
-    struct ListNode* l3 = (struct ListNode*)malloc(sizeof(struct ListNode*));
-    struct ListNode* l4 = (struct ListNode*)malloc(sizeof(struct ListNode*));
-    struct ListNode* l5 = (struct ListNode*)malloc(sizeof(struct ListNode*));
+    ListNode* l1 = (ListNode*)malloc(sizeof(ListNode*));
+    ListNode* l2 = (ListNode*)malloc(sizeof(ListNode*));
+    ListNode* l3 = (ListNode*)malloc(sizeof(ListNode*));
+    ListNode* l4 = (ListNode*)malloc(sizeof(ListNode*));
+    ListNode* l5 = (ListNode*)malloc(sizeof(ListNode*));
     l1->val = 1;
     l1->next = l2;
     l2->val = 2;
@@ -85,7 +68,7 @@ int main(int argc, char const* argv[]) {
     l4->next = l5;
     l5->val = 5;
     l5->next = NULL;
-    struct ListNode* head = removeNthFromEnd(l1, 3);
+    ListNode* head = removeNthFromEnd(l1, 3);
     printList(head);
     free(l5);
     free(l4);

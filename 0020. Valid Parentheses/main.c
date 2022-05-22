@@ -3,6 +3,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include "../STL/stack/CharStack.h"
+
 /**
  *
  * I: s = "()"
@@ -15,33 +17,8 @@
  * O: false
  */
 
-typedef struct
-{
-    int top;
-    int size;
-    char *arr;
-} Stack;
-
-bool isStackFull(Stack *stack) {
-    return stack->top == stack->size - 1 ? 1 : 0;
-}
-
-bool isStackEmpty(Stack *stack) {
-    return stack->top == -1 ? 1 : 0;
-}
-
-void push(Stack *stack, char c) {
-    if (isStackFull(stack)) return;
-    stack->arr[++(stack->top)] = c;
-}
-
-char pop(Stack *stack) {
-    if (isStackEmpty(stack)) return '\0';
-    return stack->arr[(stack->top)--];
-}
-
 bool isValid(char *s) {
-    Stack stack;
+    CharStack stack;
     stack.top = -1;
     stack.size = strlen(s);
     stack.arr = (char *)malloc(sizeof(char) * stack.size);
@@ -69,7 +46,7 @@ bool isValid(char *s) {
 }
 
 int main(int argc, char const *argv[]) {
-    char *s = "[";
-    printf("%d", isValid(s));
+    char *s = "[]";
+    printf("%d\n", isValid(s));
     return 0;
 }

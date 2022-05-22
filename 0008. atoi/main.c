@@ -3,9 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define INT_POS_LIMIT 2147483647
-#define INT_NEG_LIMIT -2147483648
-#define INT_NEG_VALUE 2147483648
+#include "../constant/integer.h"
 
 void printStr(char *s, int index) {
     while (s[index] != '\n') {
@@ -78,6 +76,6 @@ int myAtoi(char *s) {
 
 int main(int argc, char const *argv[]) {
     char *s = "20000000000000000000";
-    printf("%d", myAtoi(s));
+    printf("%d\n", myAtoi(s));
     return 0;
 }

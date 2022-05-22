@@ -3,6 +3,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include "../utils/output/print.h"
+
 /**
  * I: s = "barfoothefoobarman", words = ["foo","bar"]
  * O: [0,9]
@@ -68,21 +70,6 @@ int* findSubstring(char* s, char** words, int wordsSize, int* returnSize) {
     free(tmp);
     *returnSize = ret_Sz;
     return ret;
-}
-
-void printIntList(int* arr, int size) {
-    printf("[");
-    int index = 0;
-    while (size > 0) {
-        if (size == 1) {
-            printf("%d", arr[index]);
-        } else {
-            printf("%d,", arr[index]);
-        }
-        index++;
-        size--;
-    }
-    printf("]");
 }
 
 int main(int argc, char const* argv[]) {

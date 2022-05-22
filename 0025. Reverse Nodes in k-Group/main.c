@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+
+#include "../STL/list/singlelinkedlist.h"
+
 /**
  *
  * I: head = [1,2,3,4,5], k = 2
@@ -9,19 +12,14 @@
  * O: [3,2,1,4,5]
  */
 
-struct ListNode {
-    int val;
-    struct ListNode* next;
-};
-
-struct ListNode* reverseKGroup(struct ListNode* head, int k) {
+ListNode* reverseKGroup(ListNode* head, int k) {
     if (head == NULL || head->next == NULL || k < 2) return head;
-    struct ListNode* dummy = (struct ListNode*)malloc(sizeof(struct ListNode));
+    ListNode* dummy = (ListNode*)malloc(sizeof(ListNode));
     dummy->next = head;
 
-    struct ListNode* tail = dummy;
-    struct ListNode* pre = dummy;
-    struct ListNode* temp = NULL;
+    ListNode* tail = dummy;
+    ListNode* pre = dummy;
+    ListNode* temp = NULL;
     int count;
 
     while (1) {
@@ -47,26 +45,12 @@ struct ListNode* reverseKGroup(struct ListNode* head, int k) {
     return dummy->next;
 }
 
-void printList(struct ListNode* list) {
-    printf("[");
-    struct ListNode* p = list;
-    while (p != NULL) {
-        if (p->next != NULL) {
-            printf("%d,", p->val);
-        } else {
-            printf("%d", p->val);
-        }
-        p = p->next;
-    }
-    printf("]\n");
-}
-
 int main(int argc, char const* argv[]) {
-    struct ListNode* l1n1 = (struct ListNode*)malloc(sizeof(struct ListNode*));
-    struct ListNode* l1n2 = (struct ListNode*)malloc(sizeof(struct ListNode*));
-    struct ListNode* l1n3 = (struct ListNode*)malloc(sizeof(struct ListNode*));
-    struct ListNode* l1n4 = (struct ListNode*)malloc(sizeof(struct ListNode*));
-    struct ListNode* l1n5 = (struct ListNode*)malloc(sizeof(struct ListNode*));
+    ListNode* l1n1 = (ListNode*)malloc(sizeof(ListNode*));
+    ListNode* l1n2 = (ListNode*)malloc(sizeof(ListNode*));
+    ListNode* l1n3 = (ListNode*)malloc(sizeof(ListNode*));
+    ListNode* l1n4 = (ListNode*)malloc(sizeof(ListNode*));
+    ListNode* l1n5 = (ListNode*)malloc(sizeof(ListNode*));
     l1n1->val = 1;
     l1n1->next = l1n2;
     l1n2->val = 2;
@@ -77,7 +61,7 @@ int main(int argc, char const* argv[]) {
     l1n4->next = l1n5;
     l1n5->val = 5;
     l1n5->next = NULL;
-    struct ListNode* ret = reverseKGroup(l1n1, 2);
+    ListNode* ret = reverseKGroup(l1n1, 2);
     printList(ret);
     free(l1n1);
     free(l1n2);
