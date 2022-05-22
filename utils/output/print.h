@@ -3,4 +3,6 @@
 
 void printIntList(int* arr, int size);
 
+void printChar2DList(char** arr, int row, int col);
+
 #endif
