@@ -12,3 +12,4 @@
 |     0031     | <font color="FFB800">medium</font>  | lexical dictionary concept |
 |     0032     |  <font color="FF2D55">hard</font>   | stack                      |
 |     0037     |  <font color="FF2D55">hard</font>   | backtrack + recursion      |
+|     0038     | <font color="FFB800">medium</font>  | recursion                  |
