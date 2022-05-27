@@ -13,3 +13,4 @@
 |     0032     |  <font color="FF2D55">hard</font>   | stack                      |
 |     0037     |  <font color="FF2D55">hard</font>   | backtrack + recursion      |
 |     0038     | <font color="FFB800">medium</font>  | recursion                  |
+|     0042     |  <font color="FFB800">hard</font>   | dynamic programming        |
