@@ -1,3 +1,4 @@
+#include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -7,37 +8,37 @@
  * I: nums = [1,2,3]
  * O: [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
  *
- * I: nums = [0,1]
- * O: [[0,1],[1,0]]
+ * I: nums = [1,1,2]
+ * O: [[1,1,2],
+ *     [1,2,1],
+ *     [2,1,1]]
  *
- * I: nums = [1]
- * O: [[1]]
  */
-
-// https://blog.csdn.net/weixin_30510153/article/details/99463437?spm=1001.2101.3001.6650.2&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-2-99463437-blog-79645058.pc_relevant_default&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-2-99463437-blog-79645058.pc_relevant_default&utm_relevant_index=5
 
 /**
  * Return an array of arrays of size *returnSize.
  * The sizes of the arrays are returned as *returnColumnSizes array.
  * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().
  */
-int** permute(int* nums, int numsSize, int* returnSize, int** returnColumnSizes);
+int** permuteUnique(int* nums, int numsSize, int* returnSize, int** returnColumnSizes);
 
-void recursion(int* nums, int** ret, int pos, int numsSize, int* returnSize);
+void recursion(int* nums, int** ret, int start, int end, int* returnSize);
 
 void swap(int* x, int* y);
 
+bool needSwap(int* nums, int start, int end);
+
 int main(int argc, char const* argv[]) {
-    int nums[4] = {1, 2, 3, 4};
-    int numsSize = 4;
+    int nums[3] = {1, 1, 2};
+    int numsSize = 3;
     int* returnSize = (int*)malloc(sizeof(int));
     int** returnColumnSize = (int**)malloc(sizeof(int*));
-    int** ret = permute(nums, numsSize, returnSize, returnColumnSize);
+    int** ret = permuteUnique(nums, numsSize, returnSize, returnColumnSize);
     printInt2DList(ret, *returnSize, *returnColumnSize);
     return 0;
 }
 
-int** permute(int* nums, int numsSize, int* returnSize, int** returnColumnSizes) {
+int** permuteUnique(int* nums, int numsSize, int* returnSize, int** returnColumnSizes) {
     *returnSize = 0;
     if (numsSize == 0) return NULL;
 
@@ -56,19 +57,21 @@ int** permute(int* nums, int numsSize, int* returnSize, int** returnColumnSizes)
     return ret;
 }
 
-void recursion(int* nums, int** ret, int pos, int numsSize, int* returnSize) {
-    if (pos == numsSize) {
-        for (int i = 0; i < numsSize; i++) {
+void recursion(int* nums, int** ret, int start, int end, int* returnSize) {
+    if (start == end) {
+        for (int i = 0; i < end; i++) {
             ret[*returnSize][i] = nums[i];
         }
         (*returnSize)++;
         return;
     }
 
-    for (int i = pos; i < numsSize; i++) {
-        swap(nums + pos, nums + i);
-        recursion(nums, ret, pos + 1, numsSize, returnSize);
-        swap(nums + pos, nums + i);
+    for (int i = start; i < end; i++) {
+        if (!needSwap(nums, start, i))
+            continue;
+        swap(nums + start, nums + i);
+        recursion(nums, ret, start + 1, end, returnSize);
+        swap(nums + start, nums + i);
     }
 }
 
@@ -76,4 +79,12 @@ void swap(int* x, int* y) {
     int tmp = *x;
     *x = *y;
     *y = tmp;
+}
+
+bool needSwap(int* nums, int start, int end) {
+    for (int i = start; i < end; i++) {
+        if (nums[i] == nums[end])
+            return false;
+    }
+    return true;
 }
