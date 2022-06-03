@@ -49,3 +49,19 @@ void printChar2DList(char** arr, int row, int col) {
     }
     printf("]\n");
 }
+
+void printString2DList(char*** arr, int rowSize, int* colSize) {
+    printf("[");
+    for (int i = 0; i < rowSize; i++) {
+        printf("[");
+        for (int j = 0; j < colSize[i]; j++) {
+            if (i == rowSize - 1 && j == colSize[i] - 1)
+                printf("%s]", arr[i][j]);
+            else if (j == colSize[i] - 1)
+                printf("%s],", arr[i][j]);
+            else
+                printf("%s,", arr[i][j]);
+        }
+    }
+    printf("]\n");
+}
