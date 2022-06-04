@@ -16,3 +16,4 @@
 |     0042     |  <font color="FFB800">hard</font>   | dynamic programming                     |
 |     0044     |  <font color="FFB800">hard</font>   | dynamic programming                     |
 |     0046     | <font color="FFB800">medium</font>  | recursion or lexical dictionary concept |
+|     0051     |  <font color="FFB800">hard</font>   | backtracking                            |
