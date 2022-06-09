@@ -40,6 +40,7 @@ string getPermutation(int n, int k) {
     return permuteK(base, k);
     // permute(per, base, "");
     // sort(per.begin(), per.end());
+    // return per[k - 1];
 }
 
 string permuteK(string str, int k) {
