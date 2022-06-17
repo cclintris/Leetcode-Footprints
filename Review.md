@@ -19,3 +19,4 @@
 |     0051     |  <font color="FFB800">hard</font>   | backtracking                            |
 |     0053     |  <font color="00AF9B">easy</font>   | dynamic programming                     |
 |     0060     |  <font color="FFB800">hard</font>   | recursion + permutation                 |
+|     0069     | <font color="FFB800">medium</font>  | binary search                           |
