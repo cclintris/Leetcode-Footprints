@@ -20,3 +20,5 @@
 |     0053     |  <font color="00AF9B">easy</font>   | dynamic programming                     |
 |     0060     |  <font color="FFB800">hard</font>   | recursion + permutation                 |
 |     0069     | <font color="FFB800">medium</font>  | binary search                           |
+|     0072     |  <font color="FFB800">hard</font>   | dynamic programming                     |
+|     0745     |  <font color="FFB800">hard</font>   | hashmap                                 |
