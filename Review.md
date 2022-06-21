@@ -21,4 +21,5 @@
 |     0060     |  <font color="FFB800">hard</font>   | recursion + permutation                 |
 |     0069     | <font color="FFB800">medium</font>  | binary search                           |
 |     0072     |  <font color="FFB800">hard</font>   | dynamic programming                     |
+|     0076     |  <font color="FFB800">hard</font>   | two pointer                             |
 |     0745     |  <font color="FFB800">hard</font>   | hashmap                                 |
