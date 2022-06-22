@@ -11,7 +11,7 @@
 |     0029     | <font color="FFB800">medium</font>  | integer control                         |
 |     0031     | <font color="FFB800">medium</font>  | lexical dictionary concept              |
 |     0032     |  <font color="FF2D55">hard</font>   | stack                                   |
-|     0037     |  <font color="FF2D55">hard</font>   | backtrack + recursion                   |
+|     0037     |  <font color="FF2D55">hard</font>   | dfs + backtrack + recursion             |
 |     0038     | <font color="FFB800">medium</font>  | recursion                               |
 |     0042     |  <font color="FFB800">hard</font>   | dynamic programming                     |
 |     0044     |  <font color="FFB800">hard</font>   | dynamic programming                     |
@@ -22,6 +22,7 @@
 |     0069     | <font color="FFB800">medium</font>  | binary search                           |
 |     0072     |  <font color="FFB800">hard</font>   | dynamic programming                     |
 |     0076     |  <font color="FFB800">hard</font>   | two pointer                             |
-|     0077     | <font color="FFB800">medium</font>  | recursion                               |
-|     0078     | <font color="FFB800">medium</font>  | recursion                               |
+|     0077     | <font color="FFB800">medium</font>  | dfs + backtrack + recursion             |
+|     0078     | <font color="FFB800">medium</font>  | dfs + backtrack + recursion             |
+|     0079     | <font color="FFB800">medium</font>  | dfs + backtrack + recursion             |
 |     0745     |  <font color="FFB800">hard</font>   | hashmap                                 |
