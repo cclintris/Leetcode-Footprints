@@ -26,4 +26,5 @@
 |     0078     | <font color="FFB800">medium</font>  | dfs + backtrack + recursion             |
 |     0079     | <font color="FFB800">medium</font>  | dfs + backtrack + recursion             |
 |     0084     |  <font color="FFB800">hard</font>   | stack                                   |
+|     0089     | <font color="FFB800">medium</font>  | gray code                               |
 |     0745     |  <font color="FFB800">hard</font>   | hashmap                                 |
