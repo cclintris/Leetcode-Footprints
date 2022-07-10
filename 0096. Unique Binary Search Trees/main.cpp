@@ -20,6 +20,7 @@ int main(int argc, char const* argv[]) {
     return 0;
 }
 
+// Catalan Number
 int numTrees(int n) {
     vector<int> dp(n + 1, 0);
     dp[0] = dp[1] = 1;
