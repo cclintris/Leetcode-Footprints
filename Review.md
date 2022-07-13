@@ -31,4 +31,6 @@
 |     0093     | <font color="FFB800">medium</font>  | dfs + backtrack + recursion             |
 |     0095     | <font color="FFB800">medium</font>  | BFS + recursion                         |
 |     0096     | <font color="FFB800">medium</font>  | dynamic programming, Catalan Number     |
+|     0097     | <font color="FFB800">medium</font>  | dynamic programming                     |
+|     0098     | <font color="FFB800">medium</font>  | BST                                     |
 |     0745     |  <font color="FFB800">hard</font>   | hashmap                                 |
