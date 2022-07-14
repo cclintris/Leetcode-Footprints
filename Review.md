@@ -33,4 +33,5 @@
 |     0096     | <font color="FFB800">medium</font>  | dynamic programming, Catalan Number     |
 |     0097     | <font color="FFB800">medium</font>  | dynamic programming                     |
 |     0098     | <font color="FFB800">medium</font>  | BST                                     |
+|     0099     | <font color="FFB800">medium</font>  | BST inorder                             |
 |     0745     |  <font color="FFB800">hard</font>   | hashmap                                 |
