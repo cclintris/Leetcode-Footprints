@@ -26,7 +26,7 @@ struct TreeNode {
 // non-recursive algorithm
 vector<vector<int>> levelOrder(TreeNode *root);
 
-// recusive algorithm
+// recursive algorithm
 vector<vector<int>> levelOrder(TreeNode *root);
 
 void traverse(TreeNode *node, vector<vector<int>> &res, int level);
