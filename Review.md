@@ -34,4 +34,5 @@
 |     0097     | <font color="FFB800">medium</font>  | dynamic programming                     |
 |     0098     | <font color="FFB800">medium</font>  | BST                                     |
 |     0099     | <font color="FFB800">medium</font>  | BST inorder                             |
+|     0105     | <font color="FFB800">medium</font>  | BT inorder + preorder build             |
 |     0745     |  <font color="FFB800">hard</font>   | hashmap                                 |
