@@ -37,4 +37,5 @@
 |     0105     | <font color="FFB800">medium</font>  | BT inorder + preorder build             |
 |     0106     | <font color="FFB800">medium</font>  | BT inorder + postorder build            |
 |     0111     |  <font color="00AF9B">easy</font>   | BT                                      |
+|     0120     | <font color="FFB800">medium</font>  | bottom up dynamic programming           |
 |     0745     |  <font color="#FF2D55">hard</font>  | hashmap                                 |
