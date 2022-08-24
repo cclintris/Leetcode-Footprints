@@ -39,4 +39,5 @@
 |     0111     |  <font color="00AF9B">easy</font>   | BT                                      |
 |     0120     | <font color="FFB800">medium</font>  | bottom up dynamic programming           |
 |     0123     |  <font color="#FF2D55">hard</font>  | dynamic programming + sliding window    |
+|     0124     |  <font color="#FF2D55">hard</font>  | Tree                                    |
 |     0745     |  <font color="#FF2D55">hard</font>  | hashmap                                 |
