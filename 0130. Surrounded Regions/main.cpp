@@ -47,7 +47,7 @@ void dfs(vector<vector<char>>& board, int x, int y) {
     board[x][y] = '$';
     for (int i = 0; i < dir.size(); ++i) {
         int dx = x + dir[i][0], dy = y + dir[i][1];
-        if (dx >= 0 && dx < m && dy > 0 && dy < n && board[dx][dy] == 'O') {
+        if (dx > 0 && dx < m && dy > 0 && dy < n && board[dx][dy] == 'O') {
             dfs(board, dx, dy);
         }
     }
