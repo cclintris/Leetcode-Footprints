@@ -42,4 +42,5 @@
 |     0124     |  <font color="#FF2D55">hard</font>  | Tree                                    |
 |     0126     |  <font color="#FF2D55">hard</font>  | Graph + BFS                             |
 |     0130     | <font color="FFB800">medium</font>  | dfs recursion                           |
+|     0131     | <font color="FFB800">medium</font>  | dfs + backtrack + recursion             |
 |     0745     |  <font color="#FF2D55">hard</font>  | hashmap                                 |
