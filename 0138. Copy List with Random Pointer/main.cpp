@@ -44,7 +44,7 @@ Node* copyRandomList(Node* head) {
         key++;
         head = head->next;
     }
-    new_mp[-1, NULL];
+    new_mp[-1] = NULL;
     store.push_back(NULL);
 
     int index = 0;
