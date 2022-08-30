@@ -45,4 +45,5 @@
 |     0131     | <font color="FFB800">medium</font>  | dfs + backtrack + recursion             |
 |     0133     | <font color="FFB800">medium</font>  | Graph                                   |
 |     0134     |  <font color="#FF2D55">hard</font>  | Greedy                                  |
+|     0141     |  <font color="00AF9B">easy</font>   | Floyd's tortoise and hare               |
 |     0745     |  <font color="#FF2D55">hard</font>  | hashmap                                 |
