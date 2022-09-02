@@ -46,7 +46,8 @@
 |     0133     |                  <font color="FFB800">medium</font>                   | Graph                                   |
 |     0134     |                   <font color="#FF2D55">hard</font>                   | Greedy                                  |
 | 0141 / 0142  | <font color="00AF9B">easy</font> / <font color="FFB800">medium</font> | Floyd's tortoise and hare               |
-|     0146     |                   <font color="00AF9B">easy</font>                    | LRU cache                               |
-|     0147     |                   <font color="00AF9B">easy</font>                    | linkedlist operation                    |
+|     0146     |                  <font color="FFB800">medium</font>                   | LRU cache                               |
+|     0147     |                  <font color="FFB800">medium</font>                   | linkedlist operation                    |
+|     0148     |                  <font color="FFB800">medium</font>                   | mergesort                               |
 |     0287     |                  <font color="FFB800">medium</font>                   | Very subtle Floyd's tortoise and hare   |
 |     0745     |                   <font color="#FF2D55">hard</font>                   | hashmap                                 |
