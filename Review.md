@@ -50,5 +50,6 @@
 |     0147     |                  <font color="FFB800">medium</font>                   | linkedlist operation                    |
 |     0148     |                  <font color="FFB800">medium</font>                   | mergesort                               |
 |     0149     |                   <font color="#FF2D55">hard</font>                   | GCD                                     |
+|     0152     |                  <font color="FFB800">medium</font>                   | dynamic programming                     |
 |     0287     |                  <font color="FFB800">medium</font>                   | Very subtle Floyd's tortoise and hare   |
 |     0745     |                   <font color="#FF2D55">hard</font>                   | hashmap                                 |
