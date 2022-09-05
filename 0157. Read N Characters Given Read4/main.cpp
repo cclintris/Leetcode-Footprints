@@ -36,5 +36,5 @@ int read(char *buf, int n) {
         if (num == 0) break;
         res += num;
     }
-    return res;
+    return min(res, n);
 }

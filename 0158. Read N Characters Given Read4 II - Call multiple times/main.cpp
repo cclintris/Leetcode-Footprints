@@ -41,6 +41,7 @@ class Solution {
     int readPos = 0, writePos = 0;
     char buff[4];
 };
+
 int main(int argc, char const *argv[]) {
     return 0;
 }

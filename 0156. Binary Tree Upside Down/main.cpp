@@ -28,7 +28,8 @@ int main(int argc, char const *argv[]) {
 }
 
 TreeNode *upsideDownBinaryTree(TreeNode *root) {
-    if (root->left == NULL || root == NULL) return root;
+    if (root == NULL) return NULL;
+    if (root->left == NULL) return root;
     TreeNode *l = root->left;
     TreeNode *r = root->right;
     TreeNode *res = upsideDownBinaryTree(l);
