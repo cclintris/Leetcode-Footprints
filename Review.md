@@ -56,5 +56,6 @@
 |     0160     |                   <font color="00AF9B">easy</font>                    | linkedlist intersection                 |
 |     0162     |                  <font color="FFB800">medium</font>                   | binary search                           |
 |     0173     |                  <font color="FFB800">medium</font>                   | inorder traversal iterative             |
+|     0201     |                  <font color="FFB800">medium</font>                   | bit manipulation                        |
 |     0287     |                  <font color="FFB800">medium</font>                   | Very subtle Floyd's tortoise and hare   |
 |     0745     |                   <font color="#FF2D55">hard</font>                   | hashmap                                 |
