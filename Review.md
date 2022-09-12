@@ -58,5 +58,6 @@
 |     0173     |                  <font color="FFB800">medium</font>                   | inorder traversal iterative             |
 |     0201     |                  <font color="FFB800">medium</font>                   | bit manipulation                        |
 |     0207     |                  <font color="FFB800">medium</font>                   | direct graph detect cycle               |
+|     0215     |                  <font color="FFB800">medium</font>                   | minHeap                                 |
 |     0287     |                  <font color="FFB800">medium</font>                   | Very subtle Floyd's tortoise and hare   |
 |     0745     |                   <font color="#FF2D55">hard</font>                   | hashmap                                 |
