@@ -62,4 +62,5 @@
 |     0282     |                   <font color="#FF2D55">hard</font>                   | dfs                                     |
 |     0287     |                  <font color="FFB800">medium</font>                   | Very subtle Floyd's tortoise and hare   |
 |     0314     |                  <font color="FFB800">medium</font>                   | BFS                                     |
+|     0426     |                  <font color="FFB800">medium</font>                   | dfs                                     |
 |     0745     |                   <font color="#FF2D55">hard</font>                   | hashmap                                 |
