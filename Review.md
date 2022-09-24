@@ -67,3 +67,4 @@
 |     0560     | <font color="FFB800">medium</font>  | hashmap                                 |
 |     0670     | <font color="FFB800">medium</font>  | greedy                                  |
 |     0745     |  <font color="#FF2D55">hard</font>  | hashmap                                 |
+|     1004     | <font color="FFB800">medium</font>  | sliding window                          |
