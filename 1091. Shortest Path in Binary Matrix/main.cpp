@@ -29,7 +29,7 @@ int shortestPathBinaryMatrix(vector<vector<int>>& grid) {
         return -1;
     }
     vector<pair<int, int>> adj = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}, {-1, 1}, {1, -1}, {1, 1}, {-1, -1}};
-    vector<vector<int>> dp(n, vector<int>(n, 0));
+    vector<vector<int>> dp(n, vector<int>(m, 0));
     set<pair<int, int>> visited;
     queue<pair<int, int>> q;
     q.push({0, 0});
