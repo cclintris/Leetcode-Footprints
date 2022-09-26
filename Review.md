@@ -65,6 +65,7 @@
 |     0314     | <font color="FFB800">medium</font>  | BFS                                             |
 |     0426     | <font color="FFB800">medium</font>  | dfs                                             |
 |     0523     | <font color="FFB800">medium</font>  | math                                            |
+|     0528     | <font color="FFB800">medium</font>  | binary search, random algorithm                 |
 |     0560     | <font color="FFB800">medium</font>  | hashmap                                         |
 |     0670     | <font color="FFB800">medium</font>  | greedy                                          |
 |     0745     |  <font color="#FF2D55">hard</font>  | hashmap                                         |
