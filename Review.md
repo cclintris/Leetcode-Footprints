@@ -58,6 +58,7 @@
 |     0173     | <font color="FFB800">medium</font>  | inorder traversal iterative                     |
 |     0201     | <font color="FFB800">medium</font>  | bit manipulation                                |
 |     0207     | <font color="FFB800">medium</font>  | direct graph detect cycle                       |
+|     0210     | <font color="FFB800">medium</font>  | BFS + Kahn's algorithm                          |
 |     0215     | <font color="FFB800">medium</font>  | minHeap                                         |
 |     0282     |  <font color="#FF2D55">hard</font>  | dfs                                             |
 |     0287     | <font color="FFB800">medium</font>  | Very subtle Floyd's tortoise and hare           |
