@@ -69,3 +69,4 @@
 |     0745     |  <font color="#FF2D55">hard</font>  | hashmap                                         |
 |     1004     | <font color="FFB800">medium</font>  | sliding window                                  |
 |     1091     | <font color="FFB800">medium</font>  | shortest path from node to node in graph -> BFS |
+|     1891     | <font color="FFB800">medium</font>  | Very subtle binary search                       |
