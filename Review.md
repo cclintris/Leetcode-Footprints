@@ -68,6 +68,7 @@
 |     0528     | <font color="FFB800">medium</font>  | binary search, random algorithm                 |
 |     0539     | <font color="FFB800">medium</font>  | mask array                                      |
 |     0560     | <font color="FFB800">medium</font>  | hashmap                                         |
+|     0562     | <font color="FFB800">medium</font>  | 3D dp                                           |
 |     0670     | <font color="FFB800">medium</font>  | greedy                                          |
 |     0745     |  <font color="#FF2D55">hard</font>  | hashmap                                         |
 |     1004     | <font color="FFB800">medium</font>  | sliding window                                  |
