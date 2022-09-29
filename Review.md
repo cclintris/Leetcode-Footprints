@@ -58,7 +58,7 @@
 |     0173     | <font color="FFB800">medium</font>  | inorder traversal iterative                     |
 |     0201     | <font color="FFB800">medium</font>  | bit manipulation                                |
 |     0207     | <font color="FFB800">medium</font>  | direct graph detect cycle                       |
-|     0210     | <font color="FFB800">medium</font>  | BFS + Kahn's algorithm                          |
+|     0210     | <font color="FFB800">medium</font>  | BFS + Kahn's algorithm (graph cycle detection)  |
 |     0215     | <font color="FFB800">medium</font>  | minHeap                                         |
 |     0282     |  <font color="#FF2D55">hard</font>  | dfs                                             |
 |     0287     | <font color="FFB800">medium</font>  | Very subtle Floyd's tortoise and hare           |
@@ -70,6 +70,7 @@
 |     0560     | <font color="FFB800">medium</font>  | hashmap                                         |
 |     0562     | <font color="FFB800">medium</font>  | 3D dp                                           |
 |     0670     | <font color="FFB800">medium</font>  | greedy                                          |
+|     0743     | <font color="FFB800">medium</font>  | Dijikstra + BFS (shortest path algorithm)       |
 |     0745     |  <font color="#FF2D55">hard</font>  | hashmap                                         |
 |     1004     | <font color="FFB800">medium</font>  | sliding window                                  |
 |     1091     | <font color="FFB800">medium</font>  | shortest path from node to node in graph -> BFS |
