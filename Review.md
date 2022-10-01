@@ -73,6 +73,7 @@
 |     0743     | <font color="FFB800">medium</font>  | Dijikstra + BFS (shortest path algorithm)           |
 |     0745     |  <font color="#FF2D55">hard</font>  | hashmap                                             |
 |     0777     |  <font color="#FF2D55">hard</font>  | Kahn's + BFS(cycle detection + topological sorting) |
+|     0875     | <font color="FFB800">medium</font>  | binary search                                       |
 |     1004     | <font color="FFB800">medium</font>  | sliding window                                      |
 |     1091     | <font color="FFB800">medium</font>  | shortest path from node to node in graph -> BFS     |
 |     1891     | <font color="FFB800">medium</font>  | Very subtle binary search                           |

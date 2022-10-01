@@ -54,5 +54,5 @@ bool checkSubseq(string s, string word) {
 // Optimal: Next letter pointer
 // Impossible algorithm
 int numMatchingSubseq(string s, vector<string>& words) {
-    
+    // TODO
 }
