@@ -76,5 +76,7 @@
 |     0785     | <font color="FFB800">medium</font>  | bipartite graph(BFS + DFS)                          |
 |     0875     | <font color="FFB800">medium</font>  | binary search                                       |
 |     1004     | <font color="FFB800">medium</font>  | sliding window                                      |
+|     1048     | <font color="FFB800">medium</font>  | DP: dfs + memoization                               |
+|     1105     | <font color="FFB800">medium</font>  | DP                                                  |
 |     1091     | <font color="FFB800">medium</font>  | shortest path from node to node in graph -> BFS     |
 |     1891     | <font color="FFB800">medium</font>  | Very subtle binary search                           |
