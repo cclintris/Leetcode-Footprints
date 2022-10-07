@@ -61,6 +61,7 @@
 |     0210     | <font color="FFB800">medium</font>  | Kahn's + BFS(cycle detection + topological sorting) |
 |     0215     | <font color="FFB800">medium</font>  | minHeap                                             |
 |     0238     | <font color="FFB800">medium</font>  | difference array                                    |
+|     0240     | <font color="FFB800">medium</font>  | binary search                                       |
 |     0282     |  <font color="#FF2D55">hard</font>  | dfs                                                 |
 |     0287     | <font color="FFB800">medium</font>  | Very subtle Floyd's tortoise and hare               |
 |     0314     | <font color="FFB800">medium</font>  | BFS                                                 |
