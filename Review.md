@@ -81,4 +81,5 @@
 |     1048     | <font color="FFB800">medium</font>  | DP: dfs + memoization                               |
 |     1105     | <font color="FFB800">medium</font>  | DP                                                  |
 |     1091     | <font color="FFB800">medium</font>  | shortest path from node to node in graph -> BFS     |
+|     1293     |  <font color="#FF2D55">hard</font>  | BFS + pruning                                       |
 |     1891     | <font color="FFB800">medium</font>  | Very subtle binary search                           |
